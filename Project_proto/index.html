@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--
+Created with Squiffy 5.1.0
+https://github.com/textadventures/squiffy
+-->
+	<head>
+		<title>When We Are No Longer-Game</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="jquery.min.js"></script>
+		<script src="story.js" charset="UTF-8"></script>
+
+		<script>
+			jQuery(function($){
+				$('#squiffy').squiffy();
+				var restart = function () {
+					$('#squiffy').squiffy('restart');
+				};
+				$('#restart').click(restart);
+				$('#restart').keypress(function (e) {
+					if (e.which !== 13) return;
+					restart();
+				});
+			});
+		</script>
+		<link rel="stylesheet" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Geo|Orbitron" rel="stylesheet">
+		<link rel="icon" type="image/png" sizes="32x32" href="../index/images/favicon-32x32.png">
+	</head>
+	<body>
+		<div id="squiffy-container">
+			<div id="squiffy-header">
+				<ul>
+				<li><span class="homepage"><a href="../index/index.html">BACK TO HOMEPAGE</a></span>
+				<li><a class="squiffy-header-link" id="restart" tabindex="0">REBOOT & RESTORE</a>
+				</ul>
+			</div>
+			<div ID="title">
+				<h1>When We are No Longer</h1>
+				<p>Click on <span class="purple">Purple</span> to learn more.</p>
+				<p>Click on the <span class="blue">Blue</span> to proceed.</p>
+				<h5>*Note:Decisions cannot be changed, and once you proceed, previous purple tabs cannot be revisited.</h5>
+			</div>
+			<div id="squiffy">
+			</div>
+		</div>
+	</body>
+</html>

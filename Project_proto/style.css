@@ -1,0 +1,145 @@
+@font-face {
+  font-family:'sci-fi';
+  src:url(../index/TRANSISTOR215.TTF);
+}
+
+body{
+  background:url(gamecover.png)center center;
+  background-size:cover;
+  background-color: black;
+  color:#f8ffae;
+}
+
+a.squiffy-link
+{
+    text-decoration: none;
+    color: #52e9ff;
+    cursor: pointer;
+    border-top:dashed 1px;
+    transition:all ease-in-out 0.5s;
+}
+
+a.link-passage{
+  color:#e2aeff;
+  border-bottom:dotted 1px;
+  border-top:none;
+  transition:all ease-in-out 0.5s;
+}
+
+a.squiffy-header-link
+{
+    border:none;
+    text-decoration: underline;
+    color: #52e9ff;
+    cursor: pointer;
+    font-family:'Orbitron',sans-serif;
+}
+
+
+a:visited{
+  color: inherit;
+}
+
+a:hover,a:focus{
+  color:#7eff87;
+}
+
+#squiffy a:hover,a:focus{
+  border:solid 4px transparent;
+}
+
+a.squiffy-link.disabled
+{
+    text-decoration: none;
+    border:none 0px;
+    transition:all ease 0s;
+    color:inherit !important;
+    cursor: inherit;
+    pointer-events: none;
+}
+
+a.squiffy-link.disabled:hover{
+    padding:none;
+
+  }
+
+div#squiffy-container
+{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, serif;
+}
+div#squiffy-header
+{
+    font-size: 14px;
+    text-align: right;
+}
+li{
+    display:inline-block;
+    list-style-type:none;
+}
+div#squiffy
+{
+    font-size: 23px;
+    font-family:'Geo', sans-serif;
+    line-height:1.5em;
+    background-color:rgba(16,16,16,0.6);
+    box-shadow:0px 0px 40px 40px #000000;
+    padding:20px 50px;
+}
+
+span.homepage{
+  font-family:'Orbitron',sans-serif;
+  margin-right:610px;
+  text-decoration: underline;
+  color: #52e9ff;
+  cursor: pointer;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 0.2px solid white;
+    border-bottom: 0.2px solid white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#title{
+  text-align:center;
+  font-family:'Orbitron',sans-serif;
+  color:#3ed33e;
+}
+
+#title h1{
+  font-family:'sci-fi',sans-serif;
+  color:white;
+}
+
+.purple{
+  color:#e2aeff;
+  border-bottom:dotted 1px;
+  transition:all ease-in-out 0.5s;
+}
+
+
+.blue {
+  color: #52e9ff;
+  border-top:dashed 1px;
+  transition:all ease-in-out 0.5s;
+}
+
+.purple,.blue{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.purple:hover,.blue:hover{
+  color:#7eff87;
+  border:solid 4px transparent;
+}
+
+.turncounting a.squiffy-link{
+  color: #52e9ff;
+}

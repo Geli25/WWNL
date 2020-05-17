@@ -1,0 +1,430 @@
+body{
+  background-color: black;
+  color:white;
+  margin:0;
+}
+.mobile_menu {
+    position:relative;
+    float:left;
+    display:none;
+    margin-left:2em;
+    margin-top:2em;
+    cursor: pointer;
+    z-index:2;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffc107;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav-wrap{
+  float:left;
+  position:relative;
+  display:none;
+  overflow:hidden;
+  z-index:1;
+}
+
+.mobile_nav{
+  float:left;
+  margin-top:1.5em;
+  font-family:'Orbitron', sans-serif;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+  visibility: hidden;
+  position: relative;
+  left: -100%;
+  transition-duration: 3s;
+  -webkit-transition-duration: 3s;
+}
+
+.mobile_nav.active {
+  visibility: visible;
+  left: 0;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  overflow:hidden;
+}
+
+.navmob li{
+  list-style-type:none;
+  display:inline;
+  margin-right:2em;
+}
+
+.navmob li a{
+  text-decoration:none;
+  color:#ffc107;
+}
+
+.navmob li a:hover{
+  text-decoration:underline;
+  font-weight:bold;
+  color:white;
+}
+
+.navmob li a:visited{
+  color::#ffc107;
+}
+
+#menu {
+    background: #528aaf;
+    position: relative;
+    width:97%;
+    margin-left:14px;
+    z-index:1;
+}
+
+ul#nav {
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+ul#nav li {
+    float: left;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    display: inline-block;
+    position: relative;
+    transform: skew(25deg);
+    margin-left:5px;
+}
+
+ul#nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-family:'Orbitron', sans-serif;;
+    font-size: 15px;
+    line-height: 32px;
+    padding: 15px 105px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul#nav li a span {
+    transform: skew(-25deg);
+    display:block;
+}
+
+ul#nav li.current a,
+ul#nav li a:hover,
+.first:hover:before
+{
+    background: rgba(255, 87, 34,0.8);
+    border:solid white 1px;
+    text-decoration:underline;
+}
+
+#cover{
+  background:url(images/referencecover.png) no-repeat center center;
+  background-size:cover;
+  padding-top:7em;
+  height:300px;
+  width:100%;
+  clip-path: polygon(0% 0%, 100% 1%, 100% 47%, 50% 100%, 0 47%);
+  z-index:-1;
+}
+
+#cover h1{
+text-align:center;
+font-weight:bold;
+font-family:'Orbitron',sans-serif;
+border-bottom:solid rgba(255,255,255,0.2) 5px;
+font-size:50px;
+}
+
+#content{
+  text-align:center;
+  font-family:'Orbitron',sans-serif;
+}
+
+#content h3, #content p{
+  text-align:left;
+  padding:0 2em;
+  font-family: 'Roboto Slab', serif
+}
+
+body {
+	background-color: #1a1a1a;
+}
+
+/*Download button retrieved from code pen https://codepen.io/nw/pen/udkIB, modified by me*/
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+
+	background-color: #ee6713;
+	color: white;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+  font-family:'Quantico',sans-serif;
+  text-align:center;
+
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+  #wrap{
+    width:90%;
+    margin:auto;
+  }
+  .loader{
+    margin-top:-220px;
+  }
+ }
+
+@media only screen and (min-width: 1600px) {
+   #wrap{
+     width:80%;
+     margin:auto;
+   }
+ }
+
+@media only screen and (min-width: 1800px) {
+ #wrap{
+   width:70%;
+   margin:auto;
+ }
+ }
+}
+@media screen and (min-width: 2000px) {
+ #wrap{
+   width:55%;
+   margin:auto;
+ }
+ }
+}
+@media screen and (min-width: 3000px) {
+ #wrap{
+   width:45%;
+   margin:auto;
+ }
+ }
+
+}
+@media screen and (min-width: 4000px) {
+ #wrap{
+   width:25%;
+   margin:auto;
+ }
+
+}
+
+@media screen and (max-width:1270px){
+ ul#nav li a{
+   padding: 15px 80px;
+ }
+}
+
+@media screen and (max-width:1200px){
+ ul#nav li a{
+   padding: 15px 60px;
+ }
+}
+@media screen and (max-width:1000px){
+ ul#nav li a{
+   font-size:14px;
+   padding: 15px 50px;
+ }
+}
+@media screen and (max-width:940px){
+ ul#nav li a{
+   font-size:14px;
+   padding: 10px 50px;
+ }
+}
+@media screen and (max-width:864px){
+ ul#nav li a{
+   font-size:14px;
+   padding: 10px 40px;
+}
+
+@media screen and (max-width:779px){
+ #wrapper, #menu{
+   display:none;
+ }
+ .nav-wrap{
+   display:inline-block;
+ }
+ .mobile_menu{
+   display:inline;
+ }
+}
+
+#word{
+font-size:20px;
+}
+
+}
+
+@media screen and (max-width:640px){
+ .navmob li{
+   font-size:15px;
+ }
+@media screen and (max-width:610px){
+   .navmob li{
+     font-size:13px;
+   }
+
+}
+@media screen and (max-width:546px){
+   .mobile_menu{
+     margin-left:1.5em;
+   }
+   .navmob li{
+     font-size:12px;
+   }
+
+}
+@media screen and (max-width:506px){
+   .mobile_menu{
+     margin-left:1em;
+   }
+   .navmob li{
+     font-size:12px;
+   }
+   .terminal{
+     margin-left:20px;
+   }
+   #content{
+     padding:0;
+   }
+
+}
+
+@media screen and (max-width:450px){
+#content p{
+  font-size:14px;
+}
+
+}
+
+@media screen and (max-width:414px){
+   .mobile_menu{
+     margin-left:1em;
+   }
+   .navmob li{
+     margin-right:1em;
+     margin-top:1.5em;
+     font-size:9.5px;
+     font-weight:bold;
+   }
+
+}
+@media screen and (max-width:360px){
+ .mobile_nav{
+   margin-top:1em;
+ }
+ #cover h1{
+   font-size:40px;
+ }
+ .navmob li{
+   font-size:9px;
+ }
+ #content p{
+   font-size:12px;
+ }
+}
+
+@media screen and (max-width:321px){
+  .mobile_menu{
+    margin-left:0.4em;
+  }
+  #content p{
+    font-size:10px;
+  }
+  .navmob li{
+    font-size:9.5px;
+    margin:0 0px;
+  }
+}

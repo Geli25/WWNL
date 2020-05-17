@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="posthumanism.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Quantico" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../index/images/favicon-32x32.png">
+
+  <!--This line of text replacing is copied from Stackoverflow:https://stackoverflow.com/questions/32445323/jquery-replace-text-every-2-seconds-with-words-from-an-array-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  $(function () {
+  count = 0;
+  wordsArray = ["wanting to bring them back to you.", "doubting the true nature of the Spirits."];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(400, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+    });
+  }, 3000);
+});
+function myFunction(x) {
+    x.classList.toggle("change");
+    $(".mobile_nav").toggleClass("active");
+}
+
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About WWNL</title>
+</head>
+  <body>
+<div ID="wrap">
+  <div class="mobile_menu" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
+  <div class="nav-wrap">
+    <div class="mobile_nav">
+  <ul class="navmob">
+    <li><a href="../index/index.html"><span>Home</span></a></li>
+    <li><a href="../Project_proto/index.html"><span>Play Game</span></a></li>
+    <li><a href="../example/example.html"><span>Major Themes</span></a></li>
+    <li><a href="../references/references.html"><span>References</span></a></li>
+  </ul>
+  </div>
+  </div>
+      <div ID="wrapper">
+        <div ID="menu">
+          <ul ID="nav">
+            <li><a href="../index/index.html"><span>Home</span></a></li>
+            <li><a href="../Project_proto/index.html"><span>Play Game</span></a></li>
+            <li><a href="../example/example.html"><span>Major Themes</span></a></li>
+            <li><a href="../references/references.html"><span>References</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+  <div class="spinner">
+      <div class="loader">
+        <div class="part">
+          <div class="part">
+            <div class="part">
+              <div class="part">
+                <div class="part"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="terminal">
+        <div class="screen">
+          <h1>Welcome to G.D.O</h1>
+        </div>
+      </div>
+
+    <div ID="Text">
+      <div class="text_left">
+      <h1>The World</h1>
+      <p><span>"</span>Welcome to the Government Data OutPut Department, where we Connect you to your loved one in the Spiritual Realm.</p>
+      <p>About a Century ago our organization has made a technological breakthrough in making contact with the World after one's death,
+        and since then we have been responsible for reuniting all family members and loved ones after they have passed away. We keep track of everyone's specific energy
+        and identify them in the Spiritual Realm, and project their presence as a hologram in a Projection Room installed in every home.</p>
+      <p>To improve their life in the Spiritual Realm, make various Offerings and send them over to your loved one! Be it computers, cars, diamond rings,
+        we are able to recreate them all. Make your loved ones happy even after death." </p>
+      </div>
+
+      <div class="text_right">
+        <h1>The Story</h1>
+        <h3><i>After losing your lover to the Plague, you have been <span ID="word">wishing it had all been a bad dream.</span></i></h3>
+        <p>You are Akihiro, a protagonist struggling to find the meaning of life following the death of your loved one. After their death,
+          you realize that your lover's Spirit is nowhere to be found, and in their place is a Spirit that claims to be you.
+        <p>As you investigate into the matter, the truth of the society you have always thought you knew begins to slowly unfold. Make your choices throughout your journey
+        and watch how your decisions shape your fate.</p>
+      </div>
+
+      <div class="text_left">
+      <h1>About me</h1>
+      <p> Hi! I'm Angelina Liu, welcome to <i>When We Are No Longer</i> and thanks for scrolling to the bottom of the page!
+        This is a text-based adventure game that I have created this website/game as the conjunction of final projects for two classes: <i>Web-based Multimedia Communications</i>
+        and <i>Techno-Orientalism</i>. The game itself is created from a software called Squiffy. As both a writer and web-developer I am still quite amateur, but I am excited to be able to incorporate web design elements to add atmosphere to the game!</p>
+      <p>This game speaks about many topics that I am personally interested in, as such the concept of humanity, the concept of sex and race defining our sense of identity, and the fantasies we may hold
+        for technology. This game is one of those fantasies, and I hope you enjoy it!</p>
+      <h6>P.S. There might be a hidden ending in this game, can you find it?</h6>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>

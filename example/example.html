@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="example.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Quantico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../index/images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  function myFunction(x) {
+      x.classList.toggle("change");
+      $(".mobile_nav").toggleClass("active");
+  }
+  </script>
+  <meta charset="utf-8">
+  <title>Major Themes</title>
+
+<!--This piece of code is a combination(by me) of w3Cschools a scroll function found on Google-->
+<script>
+$(document).ready(function(){
+          $(".tech").hide();
+          $(".religion").hide();
+
+    $(".left").click(function(){
+        $(".religion").show();
+        $(".tech").hide();
+        $('html, body').animate({
+      scrollTop: $("div.religion").offset().top
+    }, 1000);
+      });
+    $(".right").click(function(){
+        $(".tech").show();
+        $(".religion").hide();
+        $('html, body').animate({
+      scrollTop: $("div.tech").offset().top
+    }, 1000);
+    });
+});
+</script>
+</head>
+
+<body>
+  <div ID="wrap">
+    <div class="mobile_menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        </div>
+        <div class="nav-wrap">
+          <div class="mobile_nav">
+        <ul class="navmob">
+          <li><a href="../index/index.html"><span>Home</span></a></li>
+          <li><a href="../research/posthumanism.html"><span>About</span></a></li>
+          <li><a href="../Project_proto/index.html"><span>Play Game</span></a></li>
+          <li><a href="../references/references.html"><span>References</span></a></li>
+        </ul>
+        </div>
+        </div>
+<div ID="wrapper">
+  <div ID="menu">
+    <ul ID="nav">
+      <li><a href="../index/index.html"><span>Home</span></a></li>
+      <li><a href="../research/posthumanism.html"><span>About</span></a></li>
+      <li><a href="../Project_proto/index.html"><span>Play Game</span></a></li>
+      <li><a href="../references/references.html"><span>References</span></a></li>
+    </ul>
+  </div>
+</div>
+  <div ID="divide">
+    <span class="left"><button class="left_tab">Religion vs Technology</button></span>
+    <span class="right"><button class="right_tab">Man vs Machine</button></span>
+</div>
+<div ID="content">
+<div class="click">
+  <h3>Click on either topic to continue</h3>
+</div>
+<div class="religion">
+  <h1>RELIGION VS TECHNOLOGY</h1>
+  <div class="explanation">
+    <h3>"Technology is the gateway to achieve a religious fantasy"</h3>
+    <p>Keyword: <a href="https://www.thoughtco.com/technology-as-religion-4038599">transcendance</a></p>
+    <p>Technology is seen to be the materialization of science to enhance our experience in the world,
+        but the question lies in whether technology can do <i>everything</i>.What are some of the fantasies
+        that we hold for technology in science fiction? The technology in science fiction has become a mystical
+        power that can achieve the unknown, often compared to magic powers in regular fantasy stories.</p>
+    <p>But unlike magic, technology is something that we, in the Digital Age, are familiar with.
+      It is something concrete and emerging rapidly, so one cannot help but dream about the true potentials of technology.</p>
+    <p>Genetically enhanced super soldiers, cyborgs, and androids are a dream that we hold regarding our own lives.
+       By changing ourselves through technology and digitizing our memory, our body becomes a mere vessel and our memory
+       is able to transcend the physical and we can become immortal, an idea that is similar to the after-life in various religions.</p>
+    <p><i>When We are No Longer</i> is an imagination of what can happen when technology has achieved that point,
+      and what is different between the Spirits and humans.</p>
+</div>
+</div>
+<div class="tech">
+  <h1>MAN VS TECHNOLOGY</h1>
+  <div class="explanation">
+    <h3>What is Humanity?</h3>
+    <p>The definition of humanity is a deeply philosophical question that has no correct answer. The term 'humanity' seems to be frequently used when being compared to other species, and in science
+      fiction, we are often being compared to machines. It seems to be a fundamental part in our identity,
+      but it does not seem to be a trait that all humans have. So,what makes us different from machines, and what is this humanity? </p>
+    <p>In science fiction, the evil machines seems to have a shared identity, and they often refer to themselves as "we". They are analytical, cold and emotionless,
+       often doing unethical acts without a blink of an eye. In comparison, humans that have a sense of 'humanity' are compassionate and sentient. Most of all,
+       they have individual thought. Therefore the "I" vs "we" situation became the traditional definition of humanity.</p>
+    <p>But then comes the question of an "individual". With the <a href="https://ieet.org/index.php/IEET2/more/abbott201312">rise of a non-binary gender</a>, we are now reaching an era
+      where we have a much more fluid identity, one that "transcends" our physicality. Sound familiar? This is similar to the idea of gaining complete control of ourselves, and our bodies, and to become Post Human, just like the machines.</p>
+    <p>In <i>WWNL</i>, no gender exists, and everyone, instead of "he" "she", is referred to as "they". In this case, is there individuality?
+      Is this individuality what differentiates us as humans against the machines? That is up for the player to decide.</p>
+</div>
+</div>
+</div>
+</div>
+  </body>
+  </html>
