@@ -24,7 +24,7 @@ In your world today, 'the Connection'(yes, with a capital C) is the conduit betw
 
 The spirits are what people become once they perish. They lack a corporeal form and cannot be interacted with without the Connection.
 
-[[...:continue_2]]
+[[...]](continue_2)
 
 [[continue_2]]:
 
@@ -50,7 +50,7 @@ Dr.Lee is a nice person. You see them around in the hospital, bustling about, ta
 
 Their hand is still warm, your fingers are still intertwined with theirs, but you can feel the warmth slipping away as time passes. You know you should leave, you are still reluctant to let go.
 
-[[...:continue_3]]
+[[...]](continue_3)
 
 [[continue_3]]:
 
@@ -64,9 +64,9 @@ You notice shuffling noises from the hospital bed next to you and turn to see [a
 
 How do you respond?
 
-[["There is something special to being alive.":alive]]
+[["There is something special to being alive."]](alive)
 
-[["It's lonely when they are no longer the same as you.":spirits]]
+[["It's lonely when they are no longer the same as you."]](spirits)
 
 [a child]:
 
@@ -85,7 +85,7 @@ You stroke your beloved’s cheek gently. It’s so cold. You’ve never seen th
 
 You take a moment to reflect on the child's words, and you do not know how to respond.
 
-[[...:transition]]
+[[...]](transition)
 
 [[spirits]]:
 @inc variable
@@ -98,13 +98,13 @@ They’re not people anymore. Even with the Connection, I don't know if they can
 
 You smile at the child's words, and feel somewhat comforted.
 
-[[...:transition]]
+[[...]](transition)
 
 [[transition]]:
 
 Despite their childlike speech, you’re reminded of your lover’s parents. {if seen alive:You never know how to talk to those people, and neither does your other half.}{else:You have always felt close to them, like family, but your other half always seems to think otherwise.} They constantly lectured you on the benefits of being a spirit. Maybe it is why they chose euthanasia when the sickness went too far. You wonder if they got to reunite with their child, now that the Plague hit.
 
-[The child:child2] hops off the bed and approaches you. They peer over your shoulder at your lover. "They look like they’re sleeping." They squeezed your hand comfortingly. "They told me that you are the nice person that always leave me fruits, so I'll tell you a secret."
+[The child](child2) hops off the bed and approaches you. They peer over your shoulder at your lover. "They look like they’re sleeping." They squeezed your hand comfortingly. "They told me that you are the nice person that always leave me fruits, so I'll tell you a secret."
 
 The child skips back to their bed, and tugs on white curtains, revealing a [window].
 
@@ -134,7 +134,7 @@ The child opens the window and points at {label:2=[a skyscraper]} in the distanc
 
 "That is the God Tower!"
 
-[[...:G.D.O Tower]]
+[[...]](G.D.O Tower)
 
 [a skyscraper]:
 
@@ -192,7 +192,7 @@ Their words throw you off. "The Spirits live in the Spirit Realm," you say. "The
 
 "...I do." You say quietly, putting a hand on their head. It would be cruel to state otherwise. It could make sense. Since the Connection is established at the Tower, it would be fair for Spirits to think that the Tower is their home. Given that you do not know the child's mother and whether they have a grasp of modern technology, you decide to let it go.
 
-[[...:continue_6]]
+[[...]](continue_6)
 
 [[continue_6]]:
 
@@ -208,7 +208,7 @@ Although you'd rather not come to this hospital room again, you shake your head.
 
 The child drifts into the land of dreams. You hope that they are with their momma in that dream.
 
-[[...:continue_7]]
+[[...]](continue_7)
 
 [[continue_7]]:
 
@@ -222,7 +222,7 @@ Dr.Lee is still not back yet. You think of what you need to do now,  like gettin
 
 You kiss your lover’s forehead, staring at their face. Once you leave, nurses will carry the body out and prepare for incineration. You etch their face into your mind. You’ll see them again soon, as a Spirit, but this moment with them, where you can still feel their physical presence, is still different.
 
-{sequence:.:..:...:....:.....:[[You finally manage to tear your eyes off of them.:Ready]]}
+{sequence:.:..:...:....:.....:[[You finally manage to tear your eyes off of them.]](Ready)}
 
 [[Ready]]:
 
@@ -234,11 +234,11 @@ The air is crisp and cold as you step out into [the streets]. Your body feels st
 
 You head absently towards central Downtown where your small [apartment] is, but pause when it occurs that you could go elsewhere. 
 
-You check the map on your phone, which marks spots you frequently visit. The map marks out [Natt's house:Natt's house], [CyBeer], and [Home].
+You check the map on your phone, which marks spots you frequently visit. The map marks out [Natt's house](Natt's house), [CyBeer], and [Home].
 
 You turn on the navigation to:
 
-[[Natt's house:Natt's house]]
+[[Natt's house]](Natt's house)
 
 [[CyBeer]]
 
@@ -317,7 +317,7 @@ A Dalmatian, she had been with Natt ever since they were little. She spent 15 ye
 
 Much more expensive than the regular Projection Rooms available in regular apartments. They allow 360 access to Spirits, projecting their presence through the entire house.
 
-[[...:continue_10]]
+[[...]](continue_10)
 
 [[continue_10]]:
 
@@ -327,9 +327,9 @@ You hear Natt sigh, because everyone, including you, had seen it coming. They da
 
 How do you respond?
 
-[["They are not the only victim to the Plague.":sympathy]]
+[["They are not the only victim to the Plague."]](sympathy)
 
-[["At least I can still see them as a Spirit.":attachment]]
+[["At least I can still see them as a Spirit."]](attachment)
 
 [[sympathy]]:
 @dec variable
@@ -349,7 +349,7 @@ You chuckle. "Your spouse will be jealous if you spend so much time with me." Yo
 
 Natt simply smiles at your words and adds several more pats to your back. You feel something well up inside of you, but the most you let yourself do was choke a bit. 
 
-[[...:transition1]]
+[[...]](transition1)
 
 [[attachment]]:
 @inc variable
@@ -369,7 +369,7 @@ And as the Dalmatian plops to their digital belly, their tail going in a windmil
 
 You wonder if your other half is at home waiting for you, too.
 
-[[...:transition1]]
+[[...]](transition1)
 
 [[transition1]]:
 
@@ -379,7 +379,7 @@ When it was time to leave, Natt envelops you in a bear hug. “Don’t be a stra
 
 You leave the apartment feeling some of the weight being lifted off your shoulders.
 
-[[...:transition2]]
+[[...]](transition2)
 
 [[CyBeer]]:
 @dec variable
@@ -436,7 +436,7 @@ Anival glances at you with a raised brow before making another cocktail--this ti
 
 You guess that Anival is going for a theme by making an XYZ, a cocktail with lemon juice as one of the ingredients.
 
-[[...:continue_12]]
+[[...]](continue_12)
 
 [[continue_12]]:
 
@@ -458,7 +458,7 @@ You nod and finish off the cocktail.
 
 The drunkard seems to be middle aged, but has defined facial features. They have a scruffy look to them that would make them quite attractive. That is, if they did not reek of alcohol and were not red-faced.
 
-[[...:continue_13]]
+[[...]](continue_13)
 
 [[continue_13]]:
 
@@ -468,7 +468,7 @@ You decide to stay behind and help Anival clean up. It is the first time that yo
 
 The sun is already beginning to set by the time you finish. Your skin is particularly sensitive to these cold winds. Clutching some burgers that Anival insisted on shoving your way, you quickly scurry home to shelter both yourself and the food from the cold. Despite what happened, at least your stomach won't be empty tonight.
 
-[[...:transition2]]
+[[...]](transition2)
 
 [[Home]]:
 @inc variable
@@ -482,7 +482,7 @@ The last time you felt them was on the hospital bed. You call to mind how they w
 
 Before you realize it, you are sprinting towards your apartment.
 
-[[...:transition2]]
+[[...]](transition2)
 
 [[transition2]]:
 
@@ -529,9 +529,9 @@ You try to say in a stern voice. You have been trying your best to accommodate y
 
 You think for a bit, and say:
 
-[["Yes":yes1]]
+[["Yes"]](yes1)
 
-[["No":no1]]
+[["No"]](no1)
 
 [Offerings]:
 
@@ -555,7 +555,7 @@ As they talk, you scan the room for your significant other. You find it strange 
 
 "Is someone else is going to come to this room?" Mom asks as they scrutinize your face. "I seem to feel another person being Connected."
 
-[[...:transition4]]
+[[...]](transition4)
 
 [[no1]]:
 @dec variable
@@ -570,7 +570,7 @@ You scan the room once more, and you notice that there are still no signs of you
 
 "Is there something wrong, Aki?" You mom seems to notice your slight anxiety. "Are you looking for someone here? I did seem to feel another Spirit being connected in just earlier today."
 
-[[...:transition4]]
+[[...]](transition4)
 
 [[transition4]]:
 
@@ -603,7 +603,7 @@ With your toothbrush still in your mouth, you rush to the Projection Room.
 
 A clock that looks like a small robot, with the current time displaying on the center of its chest. It says 10:17 am.
 
-[[...:continue_16]]
+[[...]](continue_16)
 
 [[continue_16]]:
 
@@ -615,9 +615,9 @@ Blonde, short hair, skinny, yellow hoodie, and slightly slouched. The Spirit loo
 
 What is the first thought on your mind?
 
-[["This cannot be me":Not you]]
+[["This cannot be me"]](Not you)
 
-[["Have I died?":You]]
+[["Have I died?"]](You)
 
 [[Not you]]:
 @dec variable
@@ -636,7 +636,7 @@ For now, you decide to listen to what the Spirit has to say.
 
 You appreciate that both of your parents are remaining silent as well.
 
-[[...:transition5]]
+[[...]](transition5)
 
 [[You]]:
 @inc variable
@@ -655,7 +655,7 @@ You try your best to observe their actions as they walk around you as well, tryi
 
 The Spirit is exactly the same as you.
 
-[[...:transition5]]
+[[...]](transition5)
 
 [[transition5]]:
 
@@ -689,7 +689,7 @@ Your parents remain silent through the whole affair. They seem to be immersed in
 
 "Neither do I." Your mother taps their chin thoughtfully. "It is all quite blurry, but we have never talked about this with anyone."
 
-[[...:continue_18]]
+[[...]](continue_18)
 
 [[continue_18]]:
 
@@ -703,9 +703,9 @@ Their conversation caught both of your attention. "What do you mean, we?" you as
 
 You think of another possibility:
 
-[["Are they not dead?":not dead]]
+[["Are they not dead?"]](not dead)
 
-[["Are you actually not a Spirit?":not spirit]]
+[["Are you actually not a Spirit?"]](not spirit)
 
 [[not dead]]:
 @inc variable
@@ -722,7 +722,7 @@ Everyone in the Room is silent now. This entire situation just creates a giant s
 
 If they are alive, you have to find them.
 
-[[...:transition6]]
+[[...]](transition6)
 
 [[not spirit]]:
 @dec variable
@@ -739,7 +739,7 @@ Whatever they are, you want to find out why the 'Connection' chose to connect to
 
 You hope that the 'Spirit' understands what you need to do long enough to cooperate.
 
-[[...:transition6]]
+[[...]](transition6)
 
 [[transition6]]:
 
@@ -770,7 +770,7 @@ What do you choose?
 
 [[Hospital]]
 
-[[G.D.O Tower:GDO]]
+[[G.D.O Tower]](GDO)
 
 [hospital]:
 
@@ -848,7 +848,7 @@ Dr.Lee’s eyes widen. "That...is not for unauthorized personnel." They turn awa
 
 "Please doctor,please." Your voice cracks. The emotion is genuine now.
 
-[[...:continue_21]]
+[[...]](continue_21)
 
 [[continue_21]]:
 
@@ -856,13 +856,13 @@ It takes over an hour of relentless begging for Dr.Lee to agree, begrudgingly gr
 
 “The cremation will start at 4,” they grumble. “Come back to find me then.” 
 
-You leave without protest, feeling drained by the conversation. Having some time to kill, you head to the [kid's room:kid's room] and drop off the fruit you got.
+You leave without protest, feeling drained by the conversation. Having some time to kill, you head to the [kid's room](kid's room) and drop off the fruit you got.
 
 [kid's room]:
 
 The kid is sleeping again. You wonder if they have been sleeping since yesterday. You don't know how long they will keep sleeping, but you peel and cut the fruit into little pieces all the same, and place it next to them, hoping they will wake up and eat the fruit while it is still fresh.
 
-[[...:continue_22]]
+[[...]](continue_22)
 
 [[continue_22]]:
 
@@ -876,7 +876,7 @@ You try to pry your eyes away from your loved one to look at the computer screen
 
 The area is plain. There is a big furnace in the center of the room, enclosed by a metal door. All the operators are wearing face masks and short sleeves. Other than that, the only other thing present in the room is a work desk and a computer, as well as the gurney that carries your lover's body.
 
-[[...:continue_23]]
+[[...]](continue_23)
 
 [[continue_23]]:
 
@@ -898,7 +898,7 @@ The Operator seems to be finished checking the energy data, and they do not seem
 
 You watch your loved one pushed into the fire, and close your eyes. 
 
-[[...:transition7]]
+[[...]](transition7)
 
 [[GDO]]:
 @dec variable
@@ -939,7 +939,7 @@ Despite how exhausted and disheveled they look, you begin to see Aidan in a new 
 
 Friendly and easygoing, it was easy to become friends with them. They loved to crack jokes even if most people just groaned at how bad they were. They usually wear contacts, but today they seem to be wearing thin framed glasses that you have never seen before. You find a food stain on their hoodie.
 
-[[...:continue_25]]
+[[...]](continue_25)
 
 [[continue_25]]:
 
@@ -953,7 +953,7 @@ The Maintenance team incorporates updated Offerings into the system by replacing
 
 There is only one language used by the G.D.O that manages the networks. Since it is completely in-house and confidential, there is no particular name for this language, so all the workers just refer to it as the Code. Its language mostly consists of identifying the energy and ensuring communication between the two worlds.
 
-[[...:continue_26]]
+[[...]](continue_26)
 
 [[continue_26]]:
 
@@ -975,7 +975,7 @@ You apologize to them in your mind."Can you send me the latest database?"
 
 You slap them on the head.
 
-[[...:transition7]]
+[[...]](transition7)
 
 [[transition7]]:
 
@@ -989,8 +989,8 @@ It had started snowing while you were investigating. As you step back into the s
 
 After the day of information overload, you don't want to hear anymore about Spirits. Hopefully the snow can drown out some of the voices tonight. 
 
-{if seen Hospital:[[...:hospital_home]]}
-{if seen GDO:[[...:GDO_home]]}
+{if seen Hospital:[[...]](hospital_home)}
+{if seen GDO:[[...]](GDO_home)}
 
 [[hospital_home]]:
 
@@ -1014,7 +1014,7 @@ Fuyuhiro looks at you as though they can’t understand what the problem is here
 
 Your Spirit nods in approval.
 
-[[...:transition8]]
+[[...]](transition8)
 
 [[GDO_home]]:
 
@@ -1032,7 +1032,7 @@ You give them a quick rundown of all the new information you have learned.
 
 A part of you expects Fuyuhiro to give a "good job, me" joke, and while it seems like they knew exactly what you were thinking, the look they gave you seems to say it’s not going to happen. You head out of the Projection Room and shut the door behind you. There is no courtesy involved when it is yourself.
 
-[[...:transition8]]
+[[...]](transition8)
 
 [help investigate using my account]:
 
@@ -1076,7 +1076,7 @@ You turn your computer over to Fuyuhiro, and bring out metadata on your lover. "
 
 "Yes." You look away. A part of the Maintenance Team specialized in testing Connections with the Spirits, and you were able ask one of your colleagues to test the Connection with those Spirits. Remembering your interactions with them, you shudder. "They...they are all similar to me."
 
-[[...:continue_28]]
+[[...]](continue_28)
 
 [[continue_28]]:
 
@@ -1094,7 +1094,7 @@ You turn your computer over to Fuyuhiro, and bring out metadata on your lover. "
 
 "I don't think I've seen a cluster like that when I looked at other Spirit's data." Fuyuhiro says. "highly possible."
 
-[[...:continue_29]]
+[[...]](continue_29)
 
 [[continue_29]]:
 
@@ -1118,7 +1118,7 @@ There’s a long silence before Fuyuhiro coughs loudly. “Could you move away n
 
 “This is getting weird.”
 
-[[...:continue_30]]
+[[...]](continue_30)
 
 [[continue_30]]:
 
@@ -1142,7 +1142,7 @@ You feel like there is finally a gateway to this situation.
 
 {if seen Hospital: Your friend and desk buddy.} After months and months of seeing Aidan in glasses, you realized how long it has been since you have seen them cleaned up. They are not wearing glasses today, and dressed in proper work attire. You had almost forgotten that they are quite attractive when they are not disgusting.
 
-[[...:continue_31]]
+[[...]](continue_31)
 
 [[continue_31]]:
 
@@ -1154,7 +1154,7 @@ Your goal is, of course, not at the software.
 
 You call in sick for work the next day.
 
-[[...:continue_32]]
+[[...]](continue_32)
 
 [[continue_32]]:
 
@@ -1168,7 +1168,7 @@ That means as long as you have their fingerprints, you can modify the energy dat
 
 You press the fake fingerprints on the scanner, and you hear a beep. Connecting the computer to the Projection server, you are in.
 
-[[...:continue_33]]
+[[...]](continue_33)
 
 [[continue_33]]:
 
@@ -1182,7 +1182,7 @@ You copy over all of Fuyuhiro's coordinates to see if you can duplicate Fuyuhiro
 
 You both stare at the results in confusion.
 
-[[...:continue_34]]
+[[...]](continue_34)
 
 [[continue_34]]:
 
@@ -1198,7 +1198,7 @@ You both stare at the results in confusion.
 
 It took them mere seconds to process what you meant. "I am some sort of mix between you and your lover?"
 
-[[...:continue_35]]
+[[...]](continue_35)
 
 [[continue_35]]:
 
@@ -1218,7 +1218,7 @@ You coughed loudly to censor out whatever Fuyuhiro was about to say, ignoring th
 
 "And......Lisp."
 
-[[...:continue_36]]
+[[...]](continue_36)
 
 [[continue_36]]:
 
@@ -1242,7 +1242,7 @@ You did not know about that. Artificial Intelligence was something you learned i
 
 Fuyuhiro gestures you to open the computer. Perhaps it is worth a shot.
 
-[[...:continue_37]]
+[[...]](continue_37)
 
 [[continue_37]]:
 
@@ -1271,7 +1271,7 @@ A second before you become completely disheartened, you heard Fuyuhiro exclaim. 
 
 You turn your eyes towards the screen again. The error reads "Missing else() statement".
 
-[[...:continue_38]]
+[[...]](continue_38)
 
 [[continue_38]]:
 
@@ -1287,7 +1287,7 @@ You and Fuyuhiro meet eyes. They seem calm but their eyes look oddly sad. "We st
 
 Fuyuhiro nods though they don’t seem quite as determined as before.
 
-[[...:continue_39]]
+[[...]](continue_39)
 
 [[continue_39]]:
 
@@ -1299,7 +1299,7 @@ Slowly, you began mimicking the system behavior, and comparing your results with
 
 Eventually, Fuyuhiro located an inaccessible file directory at the very base of the codes.
 
-[[...:continue_40]]
+[[...]](continue_40)
 
 [[continue_40]]:
 
@@ -1315,9 +1315,9 @@ To be made into an A.I.
 
 Under your breath, you mutter:
 
-[["Those fucking liars.":liars]]
+[["Those fucking liars."]](liars)
 
-[["Spirits never really existed, did they?":nonexistent]]
+[["Spirits never really existed, did they?"]](nonexistent)
 
 [[liars]]:
 @dec variable
@@ -1336,7 +1336,7 @@ But how are you supposed to understand what Fuyuhiro must feel like? To know tha
 
 *But you can't be just that*, you want to say. You’ve spent almost a year together investigating this case, and you know that Fuyuhiro is you. They are a part of you. You hold it back, knowing that this doesn't change the fact that they are an A.I.
 
-[[...:transition9]]
+[[...]](transition9)
 
 [[nonexistent]]:
 @inc variable
@@ -1353,7 +1353,7 @@ You start to wonder if all this effort was worth it, and whether this is what yo
 
 "No, they never did." You hear Fuyuhiro, sounding as hollow as you feel. "We are all just lines and lines and lines of codes."
 
-[[...:transition9]]
+[[...]](transition9)
 
 [[transition9]]:
 
@@ -1387,7 +1387,7 @@ You purse your lips together. You hadn’t thought that far, but it seems like F
 
 Fuyuhiro smiles. "I've stopped being that a long time ago."
 
-[[...:continue_42]]
+[[...]](continue_42)
 
 [[continue_42]]:
 
@@ -1411,18 +1411,18 @@ You find yourself hoping that there might be a smidgen of possibility that perha
 
 The Connection sections shows the back and forth of data transmission between the A.I location in the system and the input stimuli in the Projection Room. This includes all the Offerings that you have purchased for every 'Spirit' that was in your Projection Room, so that the A.Is can react to it properly. The Connection seems to be very complex and intercorrelated, and you cannot perceive how they interpret the inputs. You can try and find out.
 
-[[...:continue_43]]
+[[...]](continue_43)
 
 [[continue_43]]:
 @set truth = 0
 
 What do you choose to modify?
 
-[Heuristics:heuristics]
+[Heuristics](heuristics)
 
-[Personality/Memory:personality]
+[Personality/Memory](personality)
 
-[Spiritual Connection:spirit]
+[Spiritual Connection](spirit)
 
 [heuristics]:
 @dec variable
@@ -1470,7 +1470,7 @@ squiffy.story.go("Save")
 [[Save]]:
 
 "Time is out." You hear Fuyuhiro behind you. You cut off all access to the server and you begin saving your results.
-{sequence:Compiling data:Compiling data.:Compiling data..:Compiling data...:Compiling data....:[[Data saved:time_out]]}
+{sequence:Compiling data:Compiling data.:Compiling data..:Compiling data...:Compiling data....:[[Data saved]](time_out)}
 
 [[time_out]]:
 
@@ -1553,7 +1553,7 @@ Fuyuhiro scrolls up and down the result file you have retrieved. "But these deta
 
 "And also change what they see."
 
-[[...:continue_45]]
+[[...]](continue_45)
 
 [[continue_45]]:
 
@@ -1567,11 +1567,11 @@ It is going to be really risky, and the G.D.O may realize what you are trying to
 
 You are going to:
 
-{if variable>5:[[Recover the data of your loved one:recover]]}
+{if variable>5:[[Recover the data of your loved one]](recover)}
 
-{if variable>-5:{if variable<5:[[Make a virus & expose G.D.O:virus]]}}
+{if variable>-5:{if variable<5:[[Make a virus & expose G.D.O]](virus)}}
 
-{if variable<-5:[[Reverse Engineer and gain all G.D.O Data:reverse]]}
+{if variable<-5:[[Reverse Engineer and gain all G.D.O Data]](reverse)}
 
 [[virus]]:
 
@@ -1601,7 +1601,7 @@ You can hear the chaos that you have stirred coming from all directions. There a
 
 It doesn't take long for the G.D.O to find you and take you captive.
 
-[[...:continue_47]]
+[[...]](continue_47)
 
 [[continue_47]]:
 
@@ -1623,7 +1623,7 @@ Your knees feel weak, and you are glad that you are sitting down.
 
 Their forefinger makes a crisp tap on the wooden desk. "You are either going to tell us, or you are going to stay here until you tell us."
 
-[[...:continue_48]]
+[[...]](continue_48)
 
 [[continue_48]]:
 
@@ -1635,7 +1635,7 @@ You feel yourself destabilizing when you started to break down while asking for 
 
 What do you answer?
 
-[["Because what you people are doing is sick.":sick]]
+[["Because what you people are doing is sick."]](sick)
 
 [[sick]]:
 
@@ -1665,7 +1665,7 @@ But you have been so tired, you probably said all this at some point already, so
 
 You vision becomes blurred. You wonder who is crying?
 
-[[...:continue_50]]
+[[...]](continue_50)
 
 [[continue_50]]:
 
@@ -1711,7 +1711,7 @@ And with that, you begin hacking into the system and editing the data of your lo
 
 The data reads "Akihiro".
 
-[[...:continue_52]]
+[[...]](continue_52)
 
 [[continue_52]]:
 
@@ -1729,7 +1729,7 @@ You smile back.
 
 "But I am afraid that I have to ask you, since that you probably found a lot of things you shouldn't see there." Giano crosses their arms and leans backwards on their big leather chair. "Do you know about us?"
 
-[[...:continue_53]]
+[[...]](continue_53)
 
 [[continue_53]]:
 
@@ -1789,7 +1789,7 @@ You chuckle. "Executive Giano, is it? The G.D.O system messed up and didn't Conn
 
 The Executive grits their teeth together. They look like they’d like nothing better than to rip the smirk off your face.
 
-[[...:continue_55]]
+[[...]](continue_55)
 
 [[continue_55]]:
 
@@ -1799,7 +1799,7 @@ You scoff at that idea. There is no way that's the reason. You are not being int
 
 That means they have also got a hold of Fuyuhiro. You wonder if they were modified to tell the truth.
 
-[[...:continue_56]]
+[[...]](continue_56)
 
 [[continue_56]]:
 
@@ -1819,7 +1819,7 @@ The other officials are now whispering to each other, you catch the word "trial"
 
 Giano does not say anything.
 
-[[...:continue_57]]
+[[...]](continue_57)
 
 [[continue_57]]:
 
@@ -1833,7 +1833,7 @@ But everything is going according to plan.
 
 You recall your last conversation with Fuyuhiro.
 
-[[...:continue_58]]
+[[...]](continue_58)
 
 [[continue_58]]:
 
@@ -1849,7 +1849,7 @@ You recall your last conversation with Fuyuhiro.
 
 "Well, when they do, you know what you do." Fuyuhiro makes an 'OK' sign with their hand.
 
-[[...:continue_59]]
+[[...]](continue_59)
 
 [[continue_59]]:
 
@@ -1859,7 +1859,7 @@ The night before you get out of detention, Executive Giano visits you in the cel
 
 You smile and say:
 
-[["I had to be political.":Truth Ending]]
+[["I had to be political."]](Truth Ending)
 
 [[Truth Ending]]:
 
@@ -1880,7 +1880,7 @@ squiffy.myVar = setTimeout(function(){ squiffy.story.go("True"); }, 240000);
 setTimeout(squiffy.myVar);
 
 [[True]]:
-@replace 1=[[...Or, that is what you had once thought would be the end:True Ending]]
+@replace 1=[[...Or, that is what you had once thought would be the end]](True Ending)
 
 @javascript
 clearTimeout(squiffy.myVar);
@@ -1925,7 +1925,7 @@ As much as you want to keep them around, perhaps Fuyuhiro was never meant to be 
 
 You do not turn to look at them as you work on your computer, afraid that you might change your mind.
 
-[[...:continue_61]]
+[[...]](continue_61)
 
 [[continue_61]]:
 
@@ -1935,7 +1935,7 @@ Your Projection Room, you see both 'your lover' and 'Fuyuhiro'. They greet you w
 
 You close the door to the Projection Room behind you, and step out into a new world full of possibilities.
 
-[[Thank you for Playing!:credits]]
+[[Thank you for Playing!]](credits)
 
 <iframe width="100%" height="70" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73139877&amp;color=%23648490&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true"></iframe>
 

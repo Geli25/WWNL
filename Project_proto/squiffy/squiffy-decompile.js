@@ -64,7 +64,7 @@ function htmlToSquiffy(html) {
       display = stripTags(display).trim();
       section = section.trim();
       if (CONTINUE_RE.test(section)) section = renameContinue(section);
-      return display === section ? `[[${section}]]` : `[[${display}:${section}]]`;
+      return display === section ? `[[${section}]]` : `[[${display}]](${section})`;
     }
   );
 
@@ -74,7 +74,7 @@ function htmlToSquiffy(html) {
     (_, passage, display) => {
       display = stripTags(display).trim();
       passage = passage.trim();
-      return display === passage ? `[${passage}]` : `[${display}:${passage}]`;
+      return display === passage ? `[${passage}]` : `[${display}](${passage})`;
     }
   );
 
@@ -277,7 +277,7 @@ function writeSectionBody(section, lines, inlineNextContinue) {
       : continueTarget;
     const display = continueDisplay || '...';
     lines.push('');
-    lines.push(display === targetName ? `[[${targetName}]]` : `[[${display}:${targetName}]]`);
+    lines.push(display === targetName ? `[[${targetName}]]` : `[[${display}]](${targetName})`);
   }
 }
 
