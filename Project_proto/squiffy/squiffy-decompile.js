@@ -200,18 +200,25 @@ function extractContinueLink(html) {
   };
 }
 
-// ─── 7. Pre-processing: identify level-1 inlined continues ─────────────────
+// ─── 7. Pre-processing: classify _continue chains ──────────────────────────
 
-// A _continueN is "inlined" when a named (non-_continue) section links directly
-// to it.  We inline exactly one level — the inlined section's own continue link
-// (if any) becomes a regular [[]] link to the renamed continue_N section.
+// Each _continueN chain is a simple linked list. Walking from the root
+// (the _continue linked by a named section) and alternating inline/standalone
+// classifies every node in one pass — no fixed-point loop needed.
+//   named → _continueA (inline) → _continueB (standalone) → _continueC (inline) → …
 
 const inlinedContinues = new Set();
 
-for (const [name, section] of Object.entries(SECTIONS)) {
+for (const [name] of Object.entries(SECTIONS)) {
   if (CONTINUE_RE.test(name)) continue;
-  const { continueTarget } = extractContinueLink(section.text || '');
-  if (continueTarget) inlinedContinues.add(continueTarget);
+  let { continueTarget } = extractContinueLink(SECTIONS[name].text || '');
+  let inline = true;
+  while (continueTarget && CONTINUE_RE.test(continueTarget)) {
+    if (inline) inlinedContinues.add(continueTarget);
+    const sec = SECTIONS[continueTarget];
+    continueTarget = sec ? extractContinueLink(sec.text || '').continueTarget : null;
+    inline = !inline;
+  }
 }
 
 // ─── 8. Section body writer ─────────────────────────────────────────────────
@@ -232,12 +239,27 @@ function writePassage(pName, passage, lines) {
   }
 }
 
+function emitSectionLink(lines, target, display) {
+  const targetName = CONTINUE_RE.test(target) ? renameContinue(target) : target;
+  const text = display || '...';
+  lines.push('');
+  lines.push(text === targetName ? `[[${targetName}]]` : `[[${text}]](${targetName})`);
+}
+
+function writePassages(section, lines) {
+  if (section.passages && typeof section.passages === 'object') {
+    for (const [pName, passage] of Object.entries(section.passages)) {
+      if (passage) writePassage(pName, passage, lines);
+    }
+  }
+}
+
 /**
- * Write a section's text, js, passages, and continue/forward link.
- * inlineNextContinue: when true and the forward link targets an inlined
- *   _continueN, use +++ and append that section's body here.
+ * Write a section's text, JS, passages, and continue/forward link.
+ * isTopLevel=false: inside an inlined block — continue link comes before
+ *   passages so it sits directly below the text the player just read.
  */
-function writeSectionBody(section, lines, inlineNextContinue) {
+function writeSectionBody(section, lines, isTopLevel) {
   const { beforeHtml, continueTarget, continueDisplay } =
     extractContinueLink(section.text || '');
 
@@ -250,34 +272,28 @@ function writeSectionBody(section, lines, inlineNextContinue) {
     lines.push(extractJsBody(section.js));
   }
 
-  if (section.passages && typeof section.passages === 'object') {
-    for (const [pName, passage] of Object.entries(section.passages)) {
-      if (passage) writePassage(pName, passage, lines);
-    }
+  if (!isTopLevel) {
+    if (continueTarget) emitSectionLink(lines, continueTarget, continueDisplay);
+    writePassages(section, lines);
+    return;
   }
+
+  writePassages(section, lines);
 
   if (!continueTarget) return;
 
-  if (inlineNextContinue && inlinedContinues.has(continueTarget)) {
+  if (inlinedContinues.has(continueTarget)) {
     lines.push('');
     lines.push(`+++ ${continueDisplay}`);
-
     const cont = SECTIONS[continueTarget];
     if (cont) {
       if (Array.isArray(cont.attributes) && cont.attributes.length > 0) {
         for (const attr of cont.attributes) lines.push(convertAttr(attr));
       }
-      // inlineNextContinue = false: the inlined section's own continue becomes [[]]
       writeSectionBody(cont, lines, false);
     }
   } else {
-    // Emit as a regular forward link, renaming any _continueN target
-    const targetName = CONTINUE_RE.test(continueTarget)
-      ? renameContinue(continueTarget)
-      : continueTarget;
-    const display = continueDisplay || '...';
-    lines.push('');
-    lines.push(display === targetName ? `[[${targetName}]]` : `[[${display}]](${targetName})`);
+    emitSectionLink(lines, continueTarget, continueDisplay);
   }
 }
 
@@ -305,8 +321,7 @@ for (const [sectionName, section] of Object.entries(SECTIONS)) {
     for (const attr of section.attributes) lines.push(convertAttr(attr));
   }
 
-  // Named sections can inline their first _continue; _continue sections cannot
-  writeSectionBody(section, lines, !CONTINUE_RE.test(sectionName));
+  writeSectionBody(section, lines, true);
 
   lines.push('');
 }
